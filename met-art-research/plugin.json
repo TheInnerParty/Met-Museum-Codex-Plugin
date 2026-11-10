@@ -1,0 +1,40 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "met-art-research",
+  "version": "0.1.0",
+  "description": "Search the Met collection, view artwork images, and download references with catalog information.",
+  "keywords": [
+    "art",
+    "research",
+    "museum",
+    "references",
+    "images"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Met Art Research",
+        "shortDescription": "Find and inspect artworks",
+        "longDescription": "Search the Metropolitan Museum of Art collection using a local agent skill and Python script. Filter catalog records, view numbered contact sheets, and download previews or originals with source and rights information. Requires Python 3.10+ and a desktop agent that can run commands and view local images. Contact sheets require Pillow. Independent project, not affiliated with or endorsed by The Metropolitan Museum of Art.",
+        "category": "Education & Research",
+        "capabilities": [],
+        "defaultPrompt": [
+          "Find botanical artworks at the Met and show me contact sheets of promising references.",
+          "Search broadly for Japanese textiles and help me narrow the results visually.",
+          "Save original images of these Met artworks to my references folder with citations."
+        ]
+      },
+      "review": {
+        "prompts": [
+          "Find botanical artworks at the Met and show me contact sheets of promising references.",
+          "Explore textile references across the collection and help me narrow the selection.",
+          "Download Met artworks 436535 and 45734 to a folder I choose, then inspect the saved images."
+        ]
+      },
+      "publication": {
+        "release_notes": "Initial local release: paginated API and CSV searches, resumable metadata scans, compact browsing, image downloads, and numbered contact sheets."
+      }
+    }
+  },
+  "repository": "https://github.com/TheInnerParty/Met-Museum-Codex-Plugin"
+}

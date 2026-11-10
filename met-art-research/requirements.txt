@@ -1,0 +1,2 @@
+# Only contact-sheet needs this dependency; other commands use the standard library.
+Pillow>=12.1,<14

@@ -1,0 +1,20 @@
+{
+  "name": "met-art-research",
+  "interface": {
+    "displayName": "Met Art Research"
+  },
+  "plugins": [
+    {
+      "name": "met-art-research",
+      "source": {
+        "source": "local",
+        "path": "./met-art-research"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Education & Research"
+    }
+  ]
+}
