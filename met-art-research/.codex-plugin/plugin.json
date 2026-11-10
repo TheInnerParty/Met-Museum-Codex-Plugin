@@ -1,6 +1,6 @@
 {
   "name": "met-art-research",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Search the Met collection, view artwork images, and download references with catalog information.",
   "skills": "./skills/",
   "interface": {

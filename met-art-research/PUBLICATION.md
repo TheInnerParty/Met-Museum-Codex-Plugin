@@ -1,10 +1,10 @@
 # Publication preparation
 
-Maintainer checklist for preparing version 0.1.0 for public distribution.
+Maintainer checklist for preparing version 0.1.1 for public distribution.
 
 ## Prepared
 
-- Portable and Codex compatibility manifests, version 0.1.0.
+- Portable and Codex compatibility manifests, version 0.1.1.
 - Category: Education & Research.
 - Listing description, three example prompts, and initial release notes.
 - Local script, skill, setup instructions, command reference, and automated tests.

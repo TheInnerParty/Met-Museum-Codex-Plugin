@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "met-art-research",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Search the Met collection, view artwork images, and download references with catalog information.",
   "keywords": [
     "art",
@@ -32,7 +32,7 @@
         ]
       },
       "publication": {
-        "release_notes": "Initial local release: paginated API and CSV searches, resumable metadata scans, compact browsing, image downloads, and numbered contact sheets."
+        "release_notes": "Updated the README contact-sheet example to show six results from a Cats search, with matching commands and image credits."
       }
     }
   },

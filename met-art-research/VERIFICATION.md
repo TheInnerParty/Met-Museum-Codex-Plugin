@@ -41,3 +41,9 @@ chat were not tested.
 Installed version 0.1.0 through `codex plugin add` and confirmed that Codex lists
 it as installed and enabled. Verified that the installed skill matches the source
 and generated a contact sheet successfully using the installed script.
+
+## Version 0.1.1 documentation check
+
+Generated and visually checked a six-artwork contact sheet from a `Cats` title
+search. All six records provided images and were marked public domain. Updated
+the README commands and image credits to match this example.

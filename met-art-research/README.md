@@ -25,7 +25,7 @@ codex plugin marketplace add TheInnerParty/Met-Museum-Codex-Plugin
 codex plugin add met-art-research@met-art-research
 ```
 
-Alternatively, [download the plugin ZIP (v0.1.0)](https://github.com/TheInnerParty/Met-Museum-Codex-Plugin/releases/download/v0.1.0/met-art-research-0.1.0.zip),
+Alternatively, [download the plugin ZIP (v0.1.1)](https://github.com/TheInnerParty/Met-Museum-Codex-Plugin/releases/download/v0.1.1/met-art-research-0.1.1.zip),
 extract it, and ask Codex to install the extracted folder as a local plugin.
 
 Check installation with `codex plugin list`. Start a new chat if the plugin
@@ -39,21 +39,22 @@ Run the following commands from the `met-art-research` package directory inside
 the repository:
 
 ```sh
-python3 skills/met-art-research/scripts/met.py search "sunflowers" --max-ids 50
+python3 skills/met-art-research/scripts/met.py search "Cats" --scope title --has-images --max-ids 24
 ```
 
 The response includes a `session` path. Substitute it below to retrieve catalog
 records, browse works with images, and create a contact sheet:
 
 ```sh
-python3 skills/met-art-research/scripts/met.py scan /returned/session/path --has-images
+python3 skills/met-art-research/scripts/met.py scan /returned/session/path --public-domain --has-images
 python3 skills/met-art-research/scripts/met.py show /returned/session/path --selection
-python3 skills/met-art-research/scripts/met.py contact-sheet --session /returned/session/path --selection --limit 24
+python3 skills/met-art-research/scripts/met.py contact-sheet --session /returned/session/path --selection --limit 6 --columns 3 --rows 2
 ```
 
-Open the returned contact-sheet file to view the images. Example output:
+Open the returned contact-sheet file to view the images. Example: six public-domain
+results from the “Cats” title search.
 
-![Sample contact sheet showing six artworks, each labeled with a number and Met object ID](assets/readme/contact-sheet.jpg)
+![Contact sheet showing six cat artworks from a Cats title search, labeled with numbers and Met object IDs](assets/readme/contact-sheet.jpg)
 
 To download originals:
 
