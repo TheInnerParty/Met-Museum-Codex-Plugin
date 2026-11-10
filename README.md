@@ -20,31 +20,20 @@ specified folder. Results are saved locally and returned to the agent in pages.
 
 Requires Codex with local plugin support and Python 3.10+.
 
-Install from [TheInnerParty/Met-Museum-Codex-Plugin](https://github.com/TheInnerParty/Met-Museum-Codex-Plugin):
-
 ```sh
 codex plugin marketplace add TheInnerParty/Met-Museum-Codex-Plugin
 codex plugin add met-art-research@met-art-research
 ```
 
-Check the installation with `codex plugin list`. If the plugin does not appear
-in the current Codex chat, start a new chat and select **Met Art Research**.
+Alternatively, [download the plugin ZIP (v0.1.0)](https://github.com/TheInnerParty/Met-Museum-Codex-Plugin/releases/download/v0.1.0/met-art-research-0.1.0.zip),
+extract it, and ask Codex to install the extracted folder as a local plugin.
 
-For a local checkout, use `codex plugin marketplace add /absolute/path/to/repository`
-instead. The repository folder contains `.agents/plugins/marketplace.json`.
-
-If you downloaded the plugin ZIP instead, extract it and ask Codex:
-
-> Install the local plugin at /absolute/path/to/met-art-research using a personal marketplace.
-
-Then ask, for example:
-
-> Find botanical artworks at the Met and show me a contact sheet.
-
-The skill includes dependency setup instructions for the agent. For direct
-terminal use, see [runtime setup](met-art-research/skills/met-art-research/references/runtime.md).
+Check installation with `codex plugin list`. Start a new chat if the plugin
+does not appear in the current one.
 
 ## Command-line usage
+
+See [runtime setup](met-art-research/skills/met-art-research/references/runtime.md) for dependencies.
 
 Run the following commands from the `met-art-research` package directory inside
 the repository:
